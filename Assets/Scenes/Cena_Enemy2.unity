@@ -2345,12 +2345,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9bc1a9d081cb4cb49671ee74cb519445, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo.EnemySpawner
-  poolSize: 15
+  poolSize: 5
   spawnPoint: {fileID: 284590904}
   enemyTypeAPrefab: {fileID: 814228987579031237, guid: e5d5e7b975356e94a9f9d3072657b702, type: 3}
   enemyTypeBPrefab: {fileID: 814228987579031237, guid: 2577cccc06ab8524faa6da000ac72916, type: 3}
   currentSpawnType: 1
-  timeBetweenSpawns: 5
+  timeBetweenSpawns: 10
   targetStands:
   - {fileID: 912348696}
   - {fileID: 1663028700}
