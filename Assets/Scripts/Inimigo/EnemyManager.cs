@@ -37,7 +37,7 @@ namespace Inimigo
         private StandsResourceSpawner resourceSpawner;
         [SerializeField] private TriggerCheck colliderCheck;
 
-        [SerializeField] public Transform guardedPosToReturnResource;
+        public Transform guardedPosToReturnResource;
  
         private void Awake()
         {
