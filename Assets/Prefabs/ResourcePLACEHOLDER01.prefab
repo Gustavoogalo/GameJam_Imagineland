@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 6001833882732177282}
   - component: {fileID: 6113743550770875096}
   m_Layer: 0
-  m_Name: ResourcePLACEHOLDER
+  m_Name: ResourcePLACEHOLDER01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
