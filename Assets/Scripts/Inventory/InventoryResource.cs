@@ -99,7 +99,7 @@ namespace Inventory
      
         public bool GetStolenResource(ResourceType type, int amount)
         {
-        
+            Debug.Log($"foram roubados {amount} recursos do tipo {type}");
             return RemoveResource(type, amount);
         }
     }
