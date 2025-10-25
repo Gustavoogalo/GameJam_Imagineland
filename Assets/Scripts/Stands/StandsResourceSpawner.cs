@@ -15,7 +15,8 @@ namespace Stands
 
     public class StandsResourceSpawner : MonoBehaviour
     {
-        [Header("Crafting Settings")] [SerializeField]
+        [Header("Crafting Settings")]
+        [SerializeField]
         private float timerToCraft = 5f;
 
         [Header("Sliders")]
@@ -25,7 +26,6 @@ namespace Stands
         [SerializeField] private float healthDecayRate = 0.5f;
         [SerializeField] private Slider sliderHealth;
         [SerializeField] private Slider sliderResource;
-       // [SerializeField] public Slider slider;
 
 
         [SerializeField] private GameObject resourcePrefab;
@@ -48,7 +48,7 @@ namespace Stands
 
         private void Start()
         {
-            health = maxHealth; // Inicializa a vida
+            health = maxHealth;
             StartCraft();
             sliderHealth.maxValue = maxHealth;
             sliderHealth.value = health;
@@ -58,6 +58,11 @@ namespace Stands
 
         private void Update()
         {
+            if (enemiesinRange > 0)
+            {
+                PauseCraft();
+            }
+
             switch (currentState)
             {
                 case States.Crafting:
@@ -85,9 +90,14 @@ namespace Stands
         }
         private void HandlePausedState()
         {
-            // reduz vida
+            // reduz vida só no pause
             health -= healthDecayRate * Time.deltaTime;
             sliderHealth.value = health;
+
+            if (enemiesinRange <= 0)
+            {
+                ResumeCraft();
+            }
 
             if (health <= 0)
             {
@@ -138,11 +148,11 @@ namespace Stands
 
         public void PauseCraft()
         {
-            if(currentState == States.Paused) return;
-            if (currentState != States.Waiting)
-            {
+            if (currentState == States.Paused) return;
+            //if (currentState != States.Waiting)
+            //{
                 currentState = States.Paused;
-            }
+           // }
         }
 
         public void ResumeCraft()

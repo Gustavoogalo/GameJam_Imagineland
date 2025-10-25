@@ -751,7 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo.EnemyManager
   velocity: 5
   target: {fileID: 0}
-  offset: 1
+  offset: 0
   _vfxPrefab: {fileID: 0}
   colliderCheck: {fileID: 2982878049579467967}
   guardedPosToReturnResource: {fileID: 0}
