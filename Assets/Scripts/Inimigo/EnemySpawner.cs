@@ -26,8 +26,9 @@ namespace Inimigo
 
         private List<EnemyManager> availableEnemies = new List<EnemyManager>();
         private List<EnemyManager> activeEnemies = new List<EnemyManager>();
-        
+
         [SerializeField] private List<Transform> targetStands = new List<Transform>();
+        [SerializeField] private Transform baseTransform;
 
         private void Awake()
         {
@@ -41,8 +42,8 @@ namespace Inimigo
 
         private void InitializePool()
         {
-            int countA = poolSize / 2;
-            int countB = poolSize - countA; 
+            int countA = poolSize;
+            int countB = poolSize;
 
             for (int i = 0; i < countA; i++)
             {
@@ -61,9 +62,17 @@ namespace Inimigo
 
             EnemyManager newEnemy = Instantiate(prefab, transform);
             var randomStand = Random.Range(0, targetStands.Count);
-            newEnemy.Setup(this, type, targetStands[randomStand]);
+            if (type == EnemyManager.EnemyType.TypeA)
+            {
+                newEnemy.Setup(this, type, targetStands[randomStand]);
+            }
+            else if(type == EnemyManager.EnemyType.TypeB)
+            {
+                newEnemy.guardedPosToReturnResource = targetStands[randomStand];
+                newEnemy.Setup(this, type, baseTransform);
+            }
             newEnemy.OnReturnToPool += ReturnEnemyToPool;
-            
+
             availableEnemies.Add(newEnemy);
         }
 
@@ -96,19 +105,19 @@ namespace Inimigo
 
         public EnemyManager SpawnEnemy()
         {
-            EnemyManager.EnemyType targetType = currentSpawnType == EnemyTypeToSpawn.TypeA ? 
-                                                    EnemyManager.EnemyType.TypeA : 
+            EnemyManager.EnemyType targetType = currentSpawnType == EnemyTypeToSpawn.TypeA ?
+                                                    EnemyManager.EnemyType.TypeA :
                                                     EnemyManager.EnemyType.TypeB;
-            
+
             EnemyManager enemyToSpawn = availableEnemies.Find(e => e.Type == targetType);
 
             if (enemyToSpawn != null)
             {
                 availableEnemies.Remove(enemyToSpawn);
                 activeEnemies.Add(enemyToSpawn);
-                
+
                 enemyToSpawn.Activate(spawnPoint.position);
-                
+
                 return enemyToSpawn;
             }
             else
@@ -116,14 +125,14 @@ namespace Inimigo
                 return null;
             }
         }
-        
+
         private void ReturnEnemyToPool(EnemyManager enemy)
         {
             if (activeEnemies.Contains(enemy))
             {
                 activeEnemies.Remove(enemy);
                 availableEnemies.Add(enemy);
-                
+
                 if (spawnCounter <= 0)
                 {
                     spawnCounter = 0;
