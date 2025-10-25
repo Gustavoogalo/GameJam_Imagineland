@@ -26,11 +26,13 @@ public class Player_Moviment : MonoBehaviour
 
     [Header("Damage Settings")] [SerializeField]
     private TriggerCheck damageCollider;
+    private Animator animator;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         controller = GetComponent<CharacterController>();
         inputSystem = new InputSystem_Actions();
         inputSystem.Enable(); // Habilita o sistema de entrada
@@ -83,11 +85,13 @@ public class Player_Moviment : MonoBehaviour
                 turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
+            animator.Play("Run");
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             horizontalVelocity = moveDir * speed; // Atualiza a velocidade horizontal
         }
         else if (controller.isGrounded)
         {
+            animator.Play("Idle");
             horizontalVelocity = Vector3.zero; // Zera a velocidade horizontal quando parado no chão
         }
 
