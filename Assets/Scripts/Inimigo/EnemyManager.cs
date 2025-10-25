@@ -2,6 +2,7 @@
 using System.Collections;
 using Camera;
 using Helpers;
+using Inventory;
 using Player;
 using Stands;
 using UnityEngine;
@@ -36,6 +37,8 @@ namespace Inimigo
         private StandsResourceSpawner resourceSpawner;
         [SerializeField] private TriggerCheck colliderCheck;
 
+        [SerializeField] public Transform guardedPosToReturnResource;
+ 
         private void Awake()
         {
         }
@@ -46,6 +49,7 @@ namespace Inimigo
             Type = type;
             agent = GetComponent<NavMeshAgent>();
             target = targetStand;
+           
             if (colliderCheck == null)
             {
                 colliderCheck = GetComponentInChildren<TriggerCheck>();
@@ -102,7 +106,15 @@ namespace Inimigo
                 }
 
                 resourceSpawner.PauseCraft();
+                resourceSpawner.enemiesinRange++;
+
             }
+            else if (other.CompareTag("Base"))
+            {
+               var baseInventory = other.GetComponent<InventoryResource>();
+                baseInventory.GetStolenResource(ResourceType.tipo1, 1);
+                agent.SetDestination(guardedPosToReturnResource.position);
+            } 
         }
 
         private void OnDeathHandler(HealthSystem health)
@@ -131,7 +143,14 @@ namespace Inimigo
         {
             if (resourceSpawner != null)
             {
-                resourceSpawner.ResumeCraft();
+                if(resourceSpawner.enemiesinRange > 0)
+                {
+                    resourceSpawner.enemiesinRange--;
+                }
+                else if(resourceSpawner.enemiesinRange <= 0)
+                {
+                    resourceSpawner.ResumeCraft();
+                }
                 resourceSpawner = null;
             }
 

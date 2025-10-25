@@ -33,6 +33,8 @@ namespace Stands
         [SerializeField] private States currentState;
         [SerializeField] private ResourceCrafted craftedResource = null;
 
+        public int enemiesinRange = 0;
+
         public float CurrentCraftProgress => (timerToCraft - counterTimer) / timerToCraft;
         public States CurrentState => currentState;
 
@@ -136,6 +138,7 @@ namespace Stands
 
         public void PauseCraft()
         {
+            if(currentState == States.Paused) return;
             if (currentState != States.Waiting)
             {
                 currentState = States.Paused;
