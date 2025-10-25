@@ -556,9 +556,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stands.StandsResourceSpawner
   timerToCraft: 5
+  counterTimer: 0
+  maxHealth: 10
+  health: 0
+  healthDecayRate: 0.5
+  sliderHealth: {fileID: 0}
+  sliderResource: {fileID: 0}
   resourcePrefab: {fileID: 7308200918645089184, guid: 4e9c7ff1e19d3a44a877dbc943397361, type: 3}
   spawnPoint: {fileID: 1336634944}
-  counterTimer: 0
   currentState: 0
   craftedResource: {fileID: 0}
   enemiesinRange: 0
@@ -1111,6 +1116,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 573508722}
   m_Mesh: {fileID: 2161448381620783055, guid: a34281a67b1306b438a424f68859f0b6, type: 3}
+--- !u!1 &591986067
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 591986068}
+  m_Layer: 0
+  m_Name: EnemyReference
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &591986068
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591986067}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.000000001737, y: -0.013, z: -0.000000012722}
+  m_LocalScale: {x: -0.021621177, y: -0.021621177, z: -0.021621177}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4931218027623766722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &688680139
 GameObject:
   m_ObjectHideFlags: 0
@@ -2354,7 +2390,7 @@ MonoBehaviour:
   targetStands:
   - {fileID: 912348696}
   - {fileID: 1663028700}
-  baseTransform: {fileID: 0}
+  baseTransform: {fileID: 591986068}
 --- !u!4 &1454582065
 Transform:
   m_ObjectHideFlags: 0
@@ -2832,7 +2868,7 @@ MonoBehaviour:
   targetStands:
   - {fileID: 912348696}
   - {fileID: 1663028700}
-  baseTransform: {fileID: 0}
+  baseTransform: {fileID: 591986068}
 --- !u!4 &1661417991
 Transform:
   m_ObjectHideFlags: 0
@@ -2929,9 +2965,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stands.StandsResourceSpawner
   timerToCraft: 5
+  counterTimer: 0
+  maxHealth: 10
+  health: 0
+  healthDecayRate: 0.5
+  sliderHealth: {fileID: 0}
+  sliderResource: {fileID: 0}
   resourcePrefab: {fileID: 7308200918645089184, guid: a17675a8d74908647a08a4b4f30ef7a0, type: 3}
   spawnPoint: {fileID: 688680140}
-  counterTimer: 0
   currentState: 0
   craftedResource: {fileID: 0}
   enemiesinRange: 0
@@ -10012,7 +10053,8 @@ Transform:
   m_LocalPosition: {x: 293.0074, y: 0.022549808, z: 1.6769638}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 591986068}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4931218027623766723
@@ -10034,8 +10076,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.17078082, y: 0.15544893, z: 0.03968587}
-  m_Center: {x: -5.287021e-10, y: 0.055237982, z: 0.019842928}
+  m_Size: {x: 0.17078082, y: 0.16981563, z: 0.03968587}
+  m_Center: {x: -9.207301e-11, y: 0.048054595, z: 0.019842926}
 --- !u!114 &4931218027623766724
 MonoBehaviour:
   m_ObjectHideFlags: 0
