@@ -1,6 +1,7 @@
 ﻿using System;
 using Stands.Resource;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace Stands
 {
@@ -17,10 +18,18 @@ namespace Stands
         [Header("Crafting Settings")] [SerializeField]
         private float timerToCraft = 5f;
 
+        [Header("Sliders")]
+        [SerializeField] private float counterTimer;
+        [SerializeField] private float maxHealth = 10f;
+        [SerializeField] private float health;
+        [SerializeField] private float healthDecayRate = 0.5f;
+        [SerializeField] private Slider sliderHealth;
+        [SerializeField] private Slider sliderResource;
+       // [SerializeField] public Slider slider;
+
+
         [SerializeField] private GameObject resourcePrefab;
         [SerializeField] private Transform spawnPoint;
-
-        [SerializeField] private float counterTimer;
         [SerializeField] private States currentState;
         [SerializeField] private ResourceCrafted craftedResource = null;
 
@@ -37,8 +46,12 @@ namespace Stands
 
         private void Start()
         {
+            health = maxHealth; // Inicializa a vida
             StartCraft();
-            //ResetTimerAndState();
+            sliderHealth.maxValue = maxHealth;
+            sliderHealth.value = health;
+            sliderResource.maxValue = timerToCraft;
+            sliderResource.value = counterTimer;
         }
 
         private void Update()
@@ -47,6 +60,9 @@ namespace Stands
             {
                 case States.Crafting:
                     HandleCraftingState();
+                    break;
+                case States.Paused:
+                    HandlePausedState();
                     break;
                 default:
                     break;
@@ -58,10 +74,23 @@ namespace Stands
             if (counterTimer > 0)
             {
                 counterTimer -= Time.deltaTime;
+                sliderResource.value = counterTimer;
             }
             else
             {
                 Craft();
+            }
+        }
+        private void HandlePausedState()
+        {
+            // reduz vida
+            health -= healthDecayRate * Time.deltaTime;
+            sliderHealth.value = health;
+
+            if (health <= 0)
+            {
+                Debug.Log("Stand destruído por falta de vida!");
+                gameObject.SetActive(false); // Ou qualquer lógica de "destruição"
             }
         }
 
@@ -125,6 +154,7 @@ namespace Stands
         {
             counterTimer = timerToCraft;
             currentState = (craftedResource == null) ? States.Ready : States.Waiting;
+            sliderResource.value = counterTimer;
         }
     }
 }
