@@ -1,4 +1,5 @@
 using System;
+using Inventory;
 using Player;
 using UnityEditor;
 using UnityEngine;
@@ -7,6 +8,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(CharacterController))]
 public class Player_Moviment : MonoBehaviour
 {
+    private InventoryResource inventoryPlayer;
     private CharacterController controller;
     private float turnSmoothVelocity;
     private Vector3 playerVelocity; // Para velocidade vertical (gravidade e pulo)
@@ -19,7 +21,7 @@ public class Player_Moviment : MonoBehaviour
     private Vector3 _input; // Entrada horizontal atual
 
     private InputSystem_Actions inputSystem;
-    
+
     private float guardedSpeed;
 
     [Header("Damage Settings")] [SerializeField]
@@ -32,6 +34,7 @@ public class Player_Moviment : MonoBehaviour
         controller = GetComponent<CharacterController>();
         inputSystem = new InputSystem_Actions();
         inputSystem.Enable(); // Habilita o sistema de entrada
+        inventoryPlayer = GetComponent<InventoryResource>();
     }
 
     void Start()
@@ -88,7 +91,7 @@ public class Player_Moviment : MonoBehaviour
             horizontalVelocity = Vector3.zero; // Zera a velocidade horizontal quando parado no chão
         }
 
-       
+
         if (!controller.isGrounded)
         {
             speed = guardedSpeed / 2;
@@ -131,6 +134,18 @@ public class Player_Moviment : MonoBehaviour
         else
         {
             damageCollider.GetComponent<Collider>().enabled = false;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Base"))
+        {
+            var baseInventory = other.GetComponent<InventoryResource>();
+            if (baseInventory != null)
+            {
+                inventoryPlayer.TransferAllResources(baseInventory);
+            }
         }
     }
 

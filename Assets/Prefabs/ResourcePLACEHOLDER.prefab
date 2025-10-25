@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 703008841301302061}
   - component: {fileID: -3763297488133165033}
   - component: {fileID: 6001833882732177282}
+  - component: {fileID: 6113743550770875096}
   m_Layer: 0
   m_Name: ResourcePLACEHOLDER
   m_TagString: Untagged
@@ -194,6 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a7544938ff049d9ba74a601cabb44e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Stands.Resource.ResourceCrafted
+  resourceType: 0
 --- !u!65 &6001833882732177282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -215,6 +217,33 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.637293, y: 2.0000005, z: 1.8538089}
   m_Center: {x: 0.31864652, y: 2.3824945e-15, z: -0.42690426}
+--- !u!54 &6113743550770875096
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7308200918645089184}
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &9133771834024906160
 GameObject:
   m_ObjectHideFlags: 0
