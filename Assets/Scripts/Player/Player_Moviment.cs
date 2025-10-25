@@ -1,4 +1,5 @@
 using System;
+using Player;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,11 +15,16 @@ public class Player_Moviment : MonoBehaviour
     [SerializeField] private float turnSmoothTime = 0.1f;
     [SerializeField] private float gravity = -9.81f;
     [SerializeField] private float jumpHeight = 2f; // Altura do pulo, ajuste conforme necessário
-    
+
     private Vector3 _input; // Entrada horizontal atual
-    
+
     private InputSystem_Actions inputSystem;
     
+    private float guardedSpeed;
+
+    [Header("Damage Settings")] [SerializeField]
+    private TriggerCheck damageCollider;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -30,16 +36,24 @@ public class Player_Moviment : MonoBehaviour
 
     void Start()
     {
+        guardedSpeed = speed;
     }
 
     private void OnEnable()
     {
         inputSystem.Player.Jump.performed += OnJump;
+
+        damageCollider.EnteredTrigger += OnDamageEnemy;
+        damageCollider.ExitedTrigger += OnExitedEnemy;
     }
 
     private void OnDisable()
     {
         inputSystem.Player.Jump.performed -= OnJump;
+
+        damageCollider.EnteredTrigger -= OnDamageEnemy;
+        damageCollider.ExitedTrigger -= OnExitedEnemy;
+
         inputSystem.Disable(); // Desabilita o sistema de entrada
     }
 
@@ -49,9 +63,10 @@ public class Player_Moviment : MonoBehaviour
         // Lê a entrada de movimento diretamente
         Vector2 moveInput = inputSystem.Player.Move.ReadValue<Vector2>();
         _input = new Vector3(moveInput.x, 0, moveInput.y);
-        
+
         HandleGravity();
         OnMove();
+        //DamageOnAir();
     }
 
     public void OnMove()
@@ -72,6 +87,16 @@ public class Player_Moviment : MonoBehaviour
         {
             horizontalVelocity = Vector3.zero; // Zera a velocidade horizontal quando parado no chão
         }
+
+       
+        if (!controller.isGrounded)
+        {
+            speed = guardedSpeed / 2;
+        }
+        else
+        {
+            speed = guardedSpeed;
+        }
         // Se não grounded, mantém a horizontalVelocity da última direção
 
         // Sempre aplica movimento: horizontal + vertical
@@ -86,7 +111,7 @@ public class Player_Moviment : MonoBehaviour
             playerVelocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
     }
-    
+
     private void HandleGravity()
     {
         if (controller.isGrounded && playerVelocity.y < 0)
@@ -95,5 +120,50 @@ public class Player_Moviment : MonoBehaviour
         }
 
         playerVelocity.y += gravity * Time.deltaTime;
+    }
+
+    private void DamageOnAir()
+    {
+        if (!controller.isGrounded)
+        {
+            damageCollider.GetComponent<Collider>().enabled = true;
+        }
+        else
+        {
+            damageCollider.GetComponent<Collider>().enabled = false;
+        }
+    }
+
+    private void OnDamageEnemy(Collider other)
+    {
+        int enemyLayer = LayerMask.NameToLayer("Enemy");
+
+        if (other.gameObject.layer == enemyLayer)
+        {
+            var health = other.GetComponent<HealthSystem>();
+            var damageInfo = new HSS_DamageInfo()
+            {
+                Amount = 1
+            };
+            if (health != null)
+            {
+                health.TakeDamage(damageInfo);
+            }
+        }
+    }
+
+    private void OnExitedEnemy(Collider other)
+    {
+        // int enemyLayer = LayerMask.NameToLayer("Enemy");
+        //
+        // if (other.gameObject.layer == enemyLayer)
+        // {
+        //     var health = other.GetComponent<HealthSystem>();
+        //     var damageInfo = new HSS_DamageInfo()
+        //     {
+        //         Amount = 1
+        //     };
+        //     health.TakeDamage(damageInfo);
+        // }
     }
 }
