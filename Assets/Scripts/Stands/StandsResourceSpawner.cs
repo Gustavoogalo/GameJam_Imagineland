@@ -2,6 +2,7 @@
 using Stands.Resource;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 namespace Stands
 {
@@ -27,7 +28,7 @@ namespace Stands
         [SerializeField] private Slider sliderHealth;
         [SerializeField] private Slider sliderResource;
 
-
+        [SerializeField] private GameObject gameOver;
         [SerializeField] private GameObject resourcePrefab;
         [SerializeField] private Transform spawnPoint;
         [SerializeField] private States currentState;
@@ -44,6 +45,8 @@ namespace Stands
             {
                 spawnPoint = transform;
             }
+
+            Time.timeScale = 1f;
         }
 
         private void Start()
@@ -90,7 +93,7 @@ namespace Stands
         }
         private void HandlePausedState()
         {
-            // reduz vida só no pause
+            // reduz vida no pause
             health -= healthDecayRate * Time.deltaTime;
             sliderHealth.value = health;
 
@@ -102,8 +105,20 @@ namespace Stands
             if (health <= 0)
             {
                 Debug.Log("Stand destruído por falta de vida!");
-                gameObject.SetActive(false); // Ou qualquer lógica de "destruição"
+                gameOver.SetActive(true);
+                Time.timeScale = 0f;
             }
+        }
+
+        public void RestartGame()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
+        }
+
+        public void BackMenu(string scene)
+        {
+            SceneManager.LoadScene(scene);
         }
 
         public void Craft()
