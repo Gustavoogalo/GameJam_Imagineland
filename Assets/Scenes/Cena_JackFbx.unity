@@ -2612,6 +2612,55 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 917200147}
   m_Mesh: {fileID: 2161448381620783055, guid: a34281a67b1306b438a424f68859f0b6, type: 3}
+--- !u!1 &976067252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 976067254}
+  - component: {fileID: 976067253}
+  m_Layer: 0
+  m_Name: FinalBaseAction
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &976067253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976067252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19fdd63947b74864b8faa4c314ee4986, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Stands.BaseFinalAction
+  winningBulletPrefab: {fileID: 0}
+  bulletForce: 10
+  bulletSpawnPoint: {fileID: 0}
+  targetToBullet: {fileID: 0}
+  cameraToEnemy: {fileID: 0}
+--- !u!4 &976067254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 976067252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4931218027623766722}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976973350
 GameObject:
   m_ObjectHideFlags: 0
@@ -12386,6 +12435,7 @@ Transform:
   - {fileID: 1360383101}
   - {fileID: 840454713}
   - {fileID: 1887687070}
+  - {fileID: 976067254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &4931218027623766723
@@ -12471,10 +12521,7 @@ MonoBehaviour:
   initialModel: {fileID: 1360383097}
   mediumModel: {fileID: 840454709}
   finalModel: {fileID: 1887687066}
-  winningBulletPrefab: {fileID: 1069526751168167691, guid: f9402441201822a4f82e839e6dd39315, type: 3}
-  bulletSpawnPoint: {fileID: 535022007}
-  targetToBullet: {fileID: 3572240475484514464}
-  cameratoEnemy: {fileID: 593258607}
+  finalAction: {fileID: 976067253}
 --- !u!33 &4933311642436025074
 MeshFilter:
   m_ObjectHideFlags: 0

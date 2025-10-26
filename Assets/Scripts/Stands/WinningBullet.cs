@@ -62,7 +62,7 @@ namespace Stands
 
                 // Dispara o evento de Ação - "Venceu o Jogo"
                 //BaseMechanic.OnGameWon?.Invoke();
-                BaseMechanic.InvokeGameWonEvent();
+                BaseFinalAction.InvokeGameWonEvent();
                 // Destrói o projétil após o impacto
                 Destroy(gameObject);
             }

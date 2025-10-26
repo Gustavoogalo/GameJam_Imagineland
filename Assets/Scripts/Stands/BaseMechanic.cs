@@ -35,44 +35,40 @@ namespace Stands
 
         [Tooltip("Modelo 3D para o estágio Final (acima de 2/3 a 3/3).")] [SerializeField]
         private GameObject finalModel;
-
-        // NOVO: Mecânica do Projétil de Vitória
-        [Header("Mecânica do Projétil de Vitória")]
-        [Tooltip("O Prefab do projétil que será disparado.")]
+        
+        // NOVO: Referência à Ação Final
+        [Header("Ação Final")]
+        [Tooltip("O script que contém a lógica de 'vitória' a ser executada ao completar a base (100%).")]
         [SerializeField]
-        private GameObject winningBulletPrefab;
-        public float bulletForce;
-
-        [Tooltip("O Transform de onde o projétil será spawnado (o canhão da base).")] [SerializeField]
-        private Transform bulletSpawnPoint;
-
-        [SerializeField] private Transform targetToBullet;
-        [SerializeField] private GameObject cameratoEnemy;
-
-
-        // Evento que será disparado ao VENCER o jogo (agora, disparado pelo projétil)
-        public static event Action OnGameWon;
+        private BaseFinalAction finalAction; 
+        
+        // **REMOVIDO:** Os campos de projétil, força, spawnpoint e target.
+        // **REMOVIDO:** O evento 'OnGameWon'. Ele foi movido para BaseFinalAction.
+        // public static event Action OnGameWon; // Removido
 
         // Variáveis de estado
         private BaseStage currentStage = BaseStage.Initial;
-        private bool hasBulletBeenSpawned = false; // Garante que o projétil só dispare uma vez
-
-        // ... (métodos Awake, OnEnable, OnDisable, OnBaseResourceChanged permanecem os mesmos) ...
+        private bool hasFinalActionBeenExecuted = false; // Renomeado para refletir o novo propósito
 
         private void Awake()
         {
-            // Verifica se o inventário foi anexado
             if (baseInventory == null)
             {
                 Debug.LogError("BaseMechanic precisa de uma referência ao InventoryResource.");
                 enabled = false;
                 return;
             }
+            // NOVO: Checagem da Ação Final
+            if (finalAction == null)
+            {
+                Debug.LogWarning("BaseMechanic não tem uma BaseFinalAction configurada. A ação final não será executada.");
+            }
         }
 
         private void OnEnable()
         {
             baseInventory.OnResourceChanged += OnBaseResourceChanged;
+            // Garante que o estado inicial seja atualizado
             UpdateBaseState(baseInventory.GetResourceAmount(requiredResourceType));
         }
 
@@ -125,13 +121,17 @@ namespace Stands
                 UpdateVisualModel();
             }
 
-            // NOVO: Verifica 100% para disparar o projétil
-            if (progress >= 1.0f && !hasBulletBeenSpawned)
+            // Lógica Modular: Verifica 100% para executar a Ação Final
+            if (progress >= 1.0f && !hasFinalActionBeenExecuted)
             {
-                Debug.Log("Base Completa! Disparando o Projétil de Vitória...");
-                hasBulletBeenSpawned = true;
-                SpawnWinningBullet();
-
+                Debug.Log("Base Completa! Executando a Ação Final...");
+                hasFinalActionBeenExecuted = true;
+                
+                if (finalAction != null)
+                {
+                    finalAction.ExecuteFinalAction(); // CHAMA O NOVO SCRIPT DE AÇÃO
+                }
+                
                 // Opcional: Desabilitar o monitoramento da base após o disparo
                 // baseInventory.OnResourceChanged -= OnBaseResourceChanged;
             }
@@ -139,33 +139,10 @@ namespace Stands
             Debug.Log($"Progresso da Base: {Mathf.Round(progress * 100)}% - Estágio: {currentStage}");
         }
 
-        // NOVO: Método para spawnar o projétil
-        private void SpawnWinningBullet()
-        {
-            if (winningBulletPrefab == null || bulletSpawnPoint == null)
-            {
-                Debug.LogError(
-                    "WinningBulletPrefab ou BulletSpawnPoint não configurados. Não foi possível disparar o projétil.");
-                return;
-            }
-
-            bulletSpawnPoint.LookAt(targetToBullet);
-
-            // Instancia o projétil na posição e rotação do ponto de spawn
-            GameObject bullet = Instantiate(winningBulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            Debug.Log("Projétil de Vitória disparado!");
-
-            cameratoEnemy.SetActive(true);
-            // Opcional: Adicionar uma força para iniciar o movimento (pode ser movido para o script do projétil)
-            if (bullet.TryGetComponent<Rigidbody>(out Rigidbody rb))
-            {
-                rb.linearVelocity = bulletSpawnPoint.forward * 5 * Time.deltaTime; 
-            }
-        }
+        // **REMOVIDO:** O método SpawnWinningBullet. Ele foi movido para BaseFinalAction.
 
         private void UpdateVisualModel()
         {
-            // ... (Lógica de ativação/desativação de modelos permanece a mesma) ...
             if (initialModel != null) initialModel.SetActive(false);
             if (mediumModel != null) mediumModel.SetActive(false);
             if (finalModel != null) finalModel.SetActive(false);
@@ -186,13 +163,16 @@ namespace Stands
             Debug.Log($"Modelo da Base Atualizado para: {currentStage}");
         }
 
+        // **REMOVIDO:** O método InvokeGameWonEvent estático (movido para BaseFinalAction).
+        /*
         public static void InvokeGameWonEvent()
         {
-            // A invocação real do evento acontece aqui dentro, onde é permitido.
             OnGameWon?.Invoke();
-
-            // NOTA: Se você quiser que o script BaseMechanic pare de reagir a tudo após a vitória,
-            // considere adicionar mais lógica aqui, mas por enquanto vamos manter o foco no evento.
         }
+        */
     }
+    
+    // A classe BaseAction pode ser removida se BaseFinalAction for usada
+    // ou renomeada para BaseMechanic, já que não é usada.
+    // public class BaseAction {} 
 }
