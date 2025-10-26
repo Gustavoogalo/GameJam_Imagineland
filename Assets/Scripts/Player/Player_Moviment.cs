@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using Inventory;
 using Player;
+using Stands.Resource;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -30,6 +31,7 @@ public class Player_Moviment : MonoBehaviour
 
     private Animator animator;
     private string currentAnimation = "";
+    public Transform carryPosition;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -82,9 +84,13 @@ public class Player_Moviment : MonoBehaviour
     {
         if (currentAnimation == "Fall_Hit" || currentAnimation == "Hit_Down_Ground") return;
 
-        if (_input != Vector3.zero && controller.isGrounded)
+        if (_input != Vector3.zero && controller.isGrounded && carryPosition.childCount <= 0)
         {
             ChangeAnimation("Run");
+        }
+        else if (_input != Vector3.zero && controller.isGrounded && carryPosition.childCount > 0)
+        {
+            ChangeAnimation("run_Carry");
         }
         else if (_input == Vector3.zero && controller.isGrounded)
         {
@@ -203,6 +209,10 @@ public class Player_Moviment : MonoBehaviour
             if (baseInventory != null)
             {
                 inventoryPlayer.TransferAllResources(baseInventory);
+                if (carryPosition.childCount > 0)
+                {
+                    carryPosition.GetChild(0).gameObject.GetComponent<ResourceCrafted>().DestroyResource();
+                }
             }
         }
     }

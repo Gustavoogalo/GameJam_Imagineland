@@ -15,7 +15,10 @@ namespace Stands.Resource
             {
                 inventoryplayer.AddResource(resourceType, 1);
                 ResourceCollected?.Invoke(this);
-                Destroy(gameObject);
+                var playerMov = inventoryplayer.GetComponent<Player_Moviment>();
+                transform.SetParent(playerMov.carryPosition);
+                transform.position = playerMov.carryPosition.position;
+                //Destroy(gameObject);
             }
         }
 
@@ -25,6 +28,11 @@ namespace Stands.Resource
             {
                 Collect(other.GetComponent<InventoryResource>());
             }
+        }
+
+        public void DestroyResource()
+        {
+            Destroy(gameObject);
         }
     }
 }
