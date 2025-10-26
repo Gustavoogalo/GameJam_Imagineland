@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Inventory;
 using Player;
 using UnityEditor;
@@ -26,7 +27,9 @@ public class Player_Moviment : MonoBehaviour
 
     [Header("Damage Settings")] [SerializeField]
     private TriggerCheck damageCollider;
+
     private Animator animator;
+    private string currentAnimation = "";
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -71,8 +74,60 @@ public class Player_Moviment : MonoBehaviour
 
         HandleGravity();
         OnMove();
-        //DamageOnAir();
+        DamageOnAir();
+        CheckAnimation();
     }
+
+    private void CheckAnimation()
+    {
+        if (currentAnimation == "Fall_Hit" || currentAnimation == "Hit_Down_Ground") return;
+
+        if (_input != Vector3.zero && controller.isGrounded)
+        {
+            ChangeAnimation("Run");
+        }
+        else if (_input == Vector3.zero && controller.isGrounded)
+        {
+            ChangeAnimation("Idle");
+        }
+        else if (playerVelocity.y > 0)
+        {
+            ChangeAnimation("Jump");
+        }
+        else if (playerVelocity.y < 0)
+        {
+            ChangeAnimation("DownGround");
+        }
+    }
+
+    public void ChangeAnimation(String animation, float crossFade = 0.2f, float time = 0)
+    {
+        if (time > 0) StartCoroutine(Wait());
+        else Validate();
+
+        IEnumerator Wait()
+        {
+            yield return new WaitForSeconds(time - crossFade);
+            Validate();
+        }
+
+        void Validate()
+        {
+            if (currentAnimation != animation)
+            {
+                currentAnimation = animation;
+                if (currentAnimation == "")
+                {
+                    CheckAnimation();
+                }
+                else
+                {
+                    animator.CrossFade(animation, crossFade);
+                }
+            }
+        }
+    }
+
 
     public void OnMove()
     {
@@ -85,13 +140,12 @@ public class Player_Moviment : MonoBehaviour
                 turnSmoothTime);
             transform.rotation = Quaternion.Euler(0f, angle, 0f);
 
-            animator.Play("Run");
+
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             horizontalVelocity = moveDir * speed; // Atualiza a velocidade horizontal
         }
         else if (controller.isGrounded)
         {
-            animator.Play("Idle");
             horizontalVelocity = Vector3.zero; // Zera a velocidade horizontal quando parado no chão
         }
 
@@ -131,7 +185,7 @@ public class Player_Moviment : MonoBehaviour
 
     private void DamageOnAir()
     {
-        if (!controller.isGrounded)
+        if (playerVelocity.y < 0)
         {
             damageCollider.GetComponent<Collider>().enabled = true;
         }
@@ -159,6 +213,7 @@ public class Player_Moviment : MonoBehaviour
 
         if (other.gameObject.layer == enemyLayer)
         {
+            ChangeAnimation("Fall_Hit");
             var health = other.GetComponent<HealthSystem>();
             var damageInfo = new HSS_DamageInfo()
             {
