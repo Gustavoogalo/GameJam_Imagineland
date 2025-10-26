@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9049634021262006047}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1188244245842947631}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end01_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3152619803821498800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end-twist_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3117078873225287231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +134,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4975006867212724575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5213135720210078955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_tweak.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -198,7 +198,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5319008264034213428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end-twist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4426218685812869427}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4766440626491155468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent_widget.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3178041583299151965}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle05_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -328,7 +328,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7048182766669135394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_heel_ik.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8911827471870949953}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_roll2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -391,7 +391,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2622259886028367733}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_heel_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1050118834632005750}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.002.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -454,7 +454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4355671042732403646}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_target.parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -486,7 +486,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5028138328263818033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -518,7 +518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4865504045343985866}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-start01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1813176725201656011}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -581,7 +581,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6008987184695175323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-shoulder.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7217407550837591836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-start01.hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -648,7 +648,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7038928179372457869}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_tweak.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -679,7 +679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8378965946713751887}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3746749260722343609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: heel.02.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -742,7 +742,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3607247045703459116}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -774,7 +774,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 718385956723853723}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_tweak.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -805,7 +805,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6312225904573575118}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -837,7 +837,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4442734510399898402}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -869,7 +869,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2068512594420745045}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -901,7 +901,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5231080245857083372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-heel.02.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -932,7 +932,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5826916137042408335}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -964,7 +964,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5491720094548836794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -996,7 +996,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8123212852484672688}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1028,7 +1028,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4716799039483101022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_rock2.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +1060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3057704370658238764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle02.ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1092,7 +1092,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8999590397662888008}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1124,7 +1124,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8937740600549256536}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-shoulder.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1159,7 +1159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8357170452294159786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1191,7 +1191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8323694833070147299}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: heel.02.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1223,7 +1223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4864400388791120929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1254,7 +1254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7920820855718275987}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: rig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1295,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7920522788926002378}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-thigh.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1327,7 +1327,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2662909558180821687}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1359,7 +1359,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4597922683785099544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.001.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1390,7 +1390,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3309376218149693789}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-toe_ik_parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1422,7 +1422,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5456657556291832737}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1454,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2284063668251961445}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-toe.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8639358719753420535}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1516,7 +1516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 907898386599394920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1548,7 +1548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6511692220900666580}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1580,7 +1580,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1827831190050632658}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-end01.parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1603,6 +1603,72 @@ Transform:
   - {fileID: 5446915846447229401}
   m_Father: {fileID: 7920820855718275987}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1591857697981984684
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4671899751479469774}
+  - component: {fileID: 1495315496541659710}
+  - component: {fileID: 7591515913906908531}
+  m_Layer: 7
+  m_Name: ColliderVerifier
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4671899751479469774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591857697981984684}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.0693896, y: 1.0693896, z: 1.0693896}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6326726277837626636}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1495315496541659710
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591857697981984684}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.67268544, z: 1}
+  m_Center: {x: 0, y: 0.33695167, z: 0}
+--- !u!114 &7591515913906908531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1591857697981984684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c0d0af44b0bd0e49ac2bec21cee7072, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerCheck
 --- !u!1 &1600095854562672927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,7 +1678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2327636775880937366}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-thigh.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1644,7 +1710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3564158289930082996}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1677,7 +1743,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2361217986106371829}
   - component: {fileID: 5048857880506533204}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1931,7 +1997,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6053620687471787801}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1963,7 +2029,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5891648224507616855}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1994,7 +2060,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2191220814123973004}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_ik.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2025,7 +2091,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2278067997320211509}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-toe_ik_parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2057,7 +2123,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3491794290509086678}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik_target.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2089,7 +2155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5002011111265065663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.002.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2120,7 +2186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4887238199723004794}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2152,7 +2218,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4566352851334566249}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_target.parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2184,7 +2250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 81902347806490042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2216,7 +2282,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6744075074077778372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-shin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2250,7 +2316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7853040502170897659}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2282,7 +2348,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3464324422425533894}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shin.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2314,7 +2380,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5397164355931387394}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2346,7 +2412,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4540287887101054714}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2378,7 +2444,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4721298807554473609}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2410,7 +2476,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2553312971734039986}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2442,7 +2508,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5602965854149317573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shoulder.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2474,7 +2540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273760904512296253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_spin_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2507,7 +2573,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1130429187365885820}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.001.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2538,7 +2604,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5934534986155877950}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-toe_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2570,7 +2636,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3462635232811115754}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2602,7 +2668,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8597509728667183635}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2634,7 +2700,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8085219385357545186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-end.parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2666,7 +2732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7620112060006165293}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-toe.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2697,7 +2763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 370374824377108017}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik_target.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2729,7 +2795,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 943517696949071486}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2761,7 +2827,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1865292887141248236}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2793,7 +2859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8190929713276450627}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VIS_thigh_ik_pole.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2825,7 +2891,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3584368970788410440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2857,7 +2923,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2511668045908283685}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-mid01.parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2889,7 +2955,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3470016235692612092}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik_target.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2920,7 +2986,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6042087086788060729}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-start01.hook_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2951,7 +3017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1373291860976528208}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-heel.02.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2984,7 +3050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4419807454254645890}
   - component: {fileID: 5769562255802577462}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NurbsPath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3238,7 +3304,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7830896113112408225}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3271,7 +3337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 762877332230747055}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-toe_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3303,7 +3369,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7143595536738699492}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-start01_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3334,9 +3400,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6326726277837626636}
-  m_Layer: 0
+  - component: {fileID: 6823127518780521436}
+  - component: {fileID: 7595940894047709913}
+  - component: {fileID: 6776789470855703064}
+  - component: {fileID: 6862105748640871566}
+  - component: {fileID: 5124332501274004819}
+  m_Layer: 7
   m_Name: Chapeleiro
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3350,16 +3421,116 @@ Transform:
   m_GameObject: {fileID: 3054121943682676351}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 290.36, y: 1.29, z: 9.4992}
-  m_LocalScale: {x: 2.2021, y: 2.2021, z: 2.2021}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.688262, y: 1.688262, z: 1.688262}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8750445951484619367}
   - {fileID: 4419807454254645890}
   - {fileID: 7920820855718275987}
   - {fileID: 2361217986106371829}
+  - {fileID: 4671899751479469774}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6823127518780521436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054121943682676351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc4907dd4637435e83ca22c8bf95c2ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Player.HealthSystem
+  maxHealth: 1
+  health: 1
+--- !u!114 &7595940894047709913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054121943682676351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 716d6779e3c34ca9a2ba9c25413f6c56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Inimigo.EnemyManager
+  velocity: 5
+  target: {fileID: 0}
+  offset: 0
+  _vfxPrefab: {fileID: 0}
+  colliderCheck: {fileID: 7591515913906908531}
+  guardedPosToReturnResource: {fileID: 0}
+  carryPos: {fileID: 0}
+  resoureprefab: {fileID: 7308200918645089184, guid: a17675a8d74908647a08a4b4f30ef7a0, type: 3}
+--- !u!195 &6776789470855703064
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054121943682676351}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 0.78
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
+--- !u!95 &6862105748640871566
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054121943682676351}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90f663d1c55703148ae48add0fa18ac8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!65 &5124332501274004819
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3054121943682676351}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.67268544, z: 1}
+  m_Center: {x: 0, y: 0.33695167, z: 0}
 --- !u!1 &3083501076592029508
 GameObject:
   m_ObjectHideFlags: 0
@@ -3369,7 +3540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1006444192177892328}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-master
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3406,7 +3577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4120053615562250577}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_target.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3438,7 +3609,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5409578705320259735}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_tweak.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3470,7 +3641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2699434449343435650}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3502,7 +3673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3245146421205276260}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3534,7 +3705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2430714140808423345}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-toe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3566,7 +3737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8170253139889005326}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3598,7 +3769,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8547011665093822763}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_roll2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3630,7 +3801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8470483095495549597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-toe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3833,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2139428197234056708}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle05.ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3694,7 +3865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 732356823151991675}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_fk.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3725,7 +3896,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077657101305662964}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_parent.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3756,7 +3927,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6050833159449643443}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: heel.02.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3787,7 +3958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3661893087199533412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3819,7 +3990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194401125354781121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3851,7 +4022,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6114661749124987342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3882,7 +4053,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8432417228863076752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_roll1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3914,7 +4085,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8683510745241355251}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3946,7 +4117,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2786325987544190836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3978,7 +4149,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8806062096903507817}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle04.ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4010,7 +4181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6168340332341535470}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_ik.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4041,7 +4212,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3330588480136868901}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4073,7 +4244,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3273264146683647286}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4107,7 +4278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2717867809059885025}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-end01.hook_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4138,7 +4309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3553044448711457777}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4170,7 +4341,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7130564386717009379}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4202,7 +4373,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7500173802031607147}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent_widget.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4233,7 +4404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2597744437450496761}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4266,7 +4437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 792517283791077893}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4298,7 +4469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6504791144362447217}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4330,7 +4501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2565680855407578543}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_roll.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4362,7 +4533,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1932849557737331414}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent_widget.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4394,7 +4565,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5681606828144071994}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4428,7 +4599,7 @@ GameObject:
   - component: {fileID: 5174010181099615204}
   - component: {fileID: 4361585687662032628}
   - component: {fileID: 3122977485291352231}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: rig:tentacle01:spline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4515,7 +4686,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3279531396385949912}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4547,7 +4718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8253465921143819567}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4579,7 +4750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7376849666126559221}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_rock1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4611,7 +4782,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1646577973456408661}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4643,7 +4814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9217175556237301169}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4675,7 +4846,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593711064399629187}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4707,7 +4878,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4655953060924665166}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.001.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4738,7 +4909,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3665667633252016444}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle03.ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4770,7 +4941,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4267184618711460593}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4804,7 +4975,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1900641714967164728}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-thigh.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4836,7 +5007,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1839687246128187255}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4868,7 +5039,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5848195349564935988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VIS_thigh_ik_pole.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4899,7 +5070,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8898210689657824265}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-mid01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4931,7 +5102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6474631389468590847}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4962,7 +5133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 777974414518714211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4994,7 +5165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6898309859292724786}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5025,7 +5196,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5551554228034074875}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle05_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5056,7 +5227,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8750445951484619367}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: metarig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5088,7 +5259,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 226534112519603753}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-heel.02.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5119,7 +5290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4259037738830760655}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5151,7 +5322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6639360506742632859}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5184,7 +5355,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 533320016301399573}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5216,7 +5387,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5816810363837947420}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5248,7 +5419,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6808294847605816211}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5280,7 +5451,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6020063396485977378}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_ik.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5311,7 +5482,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 22823620456045997}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-start
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5343,7 +5514,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6462489227245718526}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: heel.02.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5374,7 +5545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1906458845231643355}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_swing.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5406,7 +5577,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5403390782048526080}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5439,7 +5610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8950156744577450517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.001.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5470,7 +5641,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7539181561747393239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_heel_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5502,7 +5673,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3292155852538185187}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5534,7 +5705,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1080137827483441904}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5566,7 +5737,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6095251291130479770}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5599,7 +5770,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7179268812099340699}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5631,7 +5802,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3296146833456085503}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VIS_thigh_ik_pole.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5663,7 +5834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 92280759253534663}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_roll1.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5695,7 +5866,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 925299221533518583}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5727,7 +5898,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2012472796596357046}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5759,7 +5930,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8401371082079819453}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5790,7 +5961,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588205687485215934}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5821,7 +5992,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875049572442693372}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_target.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5853,7 +6024,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2282549630010220540}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5884,7 +6055,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6229273864073049621}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.002.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5916,7 +6087,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 751201684000277023}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5947,7 +6118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 614333496506591931}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5979,7 +6150,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6807751220826342136}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6011,7 +6182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4764225384842842872}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6043,7 +6214,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1240455729560752606}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6075,7 +6246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8753222897378537205}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6107,7 +6278,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3928201823237657287}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6140,7 +6311,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8382694606410684966}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shoulder.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6171,7 +6342,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5871936603261414709}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6203,7 +6374,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8961335081473579955}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-Bone.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6235,7 +6406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1636884965379171228}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shoulder.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6266,7 +6437,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8950236481366560219}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_ik_swing.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6298,7 +6469,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8838153135703630680}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_ik_target.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6329,7 +6500,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8001616259900716868}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6361,7 +6532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8848688134831327630}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-thigh.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6395,7 +6566,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7708629026266627829}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.002.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6428,7 +6599,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5190737520288218087}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6460,7 +6631,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 126771188856987747}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6491,7 +6662,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1396319879153652929}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-mid01_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6522,7 +6693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3535677198551109457}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6553,7 +6724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7653241186188505836}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_tweak.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6585,7 +6756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2813349938319775598}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6617,7 +6788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2209041467708258760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6649,7 +6820,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7783654168497458454}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_rock1.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6681,7 +6852,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3507490635237641517}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-end01.hook
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6713,7 +6884,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 517334494949553146}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6745,7 +6916,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8814599474812502460}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6777,7 +6948,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 354997336316759428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6809,7 +6980,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5487361596828712954}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6841,7 +7012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3800298065779568126}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6873,7 +7044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3445443656316744854}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: VIS_thigh_ik_pole.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6904,7 +7075,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1487723991202572013}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_fk.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6935,7 +7106,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 278503920797226853}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_tweak.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6967,7 +7138,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5099899766459808129}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent_widget.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6998,7 +7169,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4855223006144458428}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7030,7 +7201,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1717615872963072282}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_roll.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7062,7 +7233,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5332710518743785323}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_spin_ik.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7095,7 +7266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3228649156708764544}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7127,7 +7298,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 801150925205407322}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-toe.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7159,7 +7330,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4663749927440092963}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7191,7 +7362,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5411838447064313035}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7223,7 +7394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1631455374015547210}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-toe.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7255,7 +7426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6666761214383821370}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shin.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7287,7 +7458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 198075520104077433}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-toe.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7318,7 +7489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3859806561885583355}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-toe.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7349,7 +7520,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1990863576987867301}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_tweak.L.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7380,7 +7551,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 480223969551318930}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shin_tweak.R.001_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7411,7 +7582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 886121666195867917}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-heel.02_rock2.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7443,7 +7614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4765581191185930920}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7475,7 +7646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6073645821919160840}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7507,7 +7678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6401614464157657589}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-thigh.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7539,7 +7710,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2175650594774312725}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7572,7 +7743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8357868273919249919}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7605,7 +7776,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7598927197031329067}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-end.psocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7637,7 +7808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1344929340850368865}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_fk.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7669,7 +7840,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3891048717650281676}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7700,7 +7871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1525545201907221797}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-Bone.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7732,7 +7903,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7058074902197700625}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-shin.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7766,7 +7937,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4730013629025150769}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7797,7 +7968,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8290131524657553474}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7829,7 +8000,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1918116783915190308}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7861,7 +8032,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6009461041335563022}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01.ik
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7893,7 +8064,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3989211404218324513}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle05_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7924,7 +8095,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4354770719061824306}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7956,7 +8127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2339156267067901253}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7988,7 +8159,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3097343771721942902}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tweak_Bone.001.L.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8020,7 +8191,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3536150672992608597}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle05.ik_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8051,7 +8222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1340484717927824443}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8097,7 +8268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5862515135607043263}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_ik.parent.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8129,7 +8300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6867952351352793626}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8165,7 +8336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3909447579457050760}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_ik.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8197,7 +8368,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5739088668295434752}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bone.001.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8228,7 +8399,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5510964407825687942}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_ik.parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8260,7 +8431,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5446915846447229401}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle01-end01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8292,7 +8463,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2751115735403623625}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_parent.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8325,7 +8496,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2991934145154634594}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: tentacle02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8357,7 +8528,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5224247124067830452}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-thigh_tweak.R.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8389,7 +8560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 899710595475945644}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-start.psocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8421,7 +8592,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3865961552307981107}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: shoulder.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8452,7 +8623,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8020407722437185911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-heel.02.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8484,7 +8655,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8222676164031573999}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-shoulder.R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8516,7 +8687,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9008808838516981530}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-shin_ik.L_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8547,7 +8718,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1294478954155712988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: DEF-tentacle01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8579,7 +8750,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5878752739193597218}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-tentacle05_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8610,7 +8781,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 428769869429891201}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-foot_tweak.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8642,7 +8813,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 139539852672251800}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: toe_fk.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8674,7 +8845,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3540363816537661403}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: MCH-tentacle01-start01.parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8706,7 +8877,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6348365747796391468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: thigh_parent.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8737,7 +8908,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5015169035369829382}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ORG-thigh.L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8771,7 +8942,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8981247955838621279}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: foot_heel_ik.R_end
   m_TagString: Untagged
   m_Icon: {fileID: 0}

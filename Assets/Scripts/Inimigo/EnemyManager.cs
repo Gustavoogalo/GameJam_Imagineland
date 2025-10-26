@@ -138,6 +138,11 @@ namespace Inimigo
                     resourceSpawner = other.GetComponent<StandsResourceSpawner>();
                 }
 
+                if (Type == EnemyType.TypeA)
+                {
+                _animator.Play("Spell");
+                }
+
                 resourceSpawner.PauseCraft();
                 resourceSpawner.enemiesinRange++;
             }
@@ -156,7 +161,10 @@ namespace Inimigo
                 }
 
                 agent.SetDestination(guardedPosToReturnResource.position);
+                if (Type == EnemyType.TypeB)
+                {
                 _animator.Play("Float_Hold");
+                }
             }
         }
 
@@ -224,7 +232,7 @@ namespace Inimigo
             if (_animator != null)
             {
                 _animator.Rebind();
-                _animator.Play("Float");
+                _animator.Play("Run");
             }
 
             agent.enabled = true;
