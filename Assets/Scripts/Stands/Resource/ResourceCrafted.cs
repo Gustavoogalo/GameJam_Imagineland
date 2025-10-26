@@ -9,6 +9,7 @@ namespace Stands.Resource
     {
         public ResourceType resourceType;
         public GameObject vfxPrefabPoof;
+        public GameObject prefab;
         public event Action<ResourceCrafted> ResourceCollected;
         private bool giveResource = false;
 
@@ -43,7 +44,8 @@ namespace Stands.Resource
 
             IEnumerator Deathing()
             {
-                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                prefab.SetActive(false);
+                //gameObject.GetComponent<MeshRenderer>().enabled = false;
                 vfxPrefabPoof.SetActive(true);
                 yield return new WaitForSeconds(1f);
                 Destroy(gameObject);
