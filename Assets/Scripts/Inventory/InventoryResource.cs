@@ -40,6 +40,7 @@ namespace Inventory
         {
             if (amount <= 0) return;
 
+            Debug.Log($"Recebeu {amount} de recursos");
             if (resources.ContainsKey(type))
             {
                 resources[type] += amount;

@@ -10,17 +10,22 @@ namespace Stands.Resource
         public ResourceType resourceType;
         public GameObject vfxPrefabPoof;
         public event Action<ResourceCrafted> ResourceCollected;
+        private bool giveResource = false;
 
         public void Collect(InventoryResource inventoryplayer)
         {
             if (inventoryplayer != null)
             {
-                inventoryplayer.AddResource(resourceType, 1);
-                ResourceCollected?.Invoke(this);
-                var playerMov = inventoryplayer.GetComponent<Player_Moviment>();
-                transform.SetParent(playerMov.carryPosition);
-                transform.position = playerMov.carryPosition.position;
-                //Destroy(gameObject);
+                if (!giveResource)
+                {
+                    giveResource = true;
+                    inventoryplayer.AddResource(resourceType, 1);
+                    ResourceCollected?.Invoke(this);
+                    var playerMov = inventoryplayer.GetComponent<Player_Moviment>();
+                    transform.SetParent(playerMov.carryPosition);
+                    transform.position = playerMov.carryPosition.position;
+                    //Destroy(gameObject);
+                }
             }
         }
 

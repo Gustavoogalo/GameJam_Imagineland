@@ -217,6 +217,22 @@ public class Player_Moviment : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Base"))
+        {
+            var baseInventory = other.GetComponent<InventoryResource>();
+            if (baseInventory != null)
+            {
+                inventoryPlayer.TransferAllResources(baseInventory);
+                if (carryPosition.childCount > 0)
+                {
+                    carryPosition.GetChild(0).gameObject.GetComponent<ResourceCrafted>().DestroyResource();
+                }
+            }
+        }
+    }
+
     private void OnDamageEnemy(Collider other)
     {
         int enemyLayer = LayerMask.NameToLayer("Enemy");
