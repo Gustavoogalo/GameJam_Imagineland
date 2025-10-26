@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Inventory;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace Stands.Resource
     public class ResourceCrafted : MonoBehaviour
     {
         public ResourceType resourceType;
+        public GameObject vfxPrefabPoof;
         public event Action<ResourceCrafted> ResourceCollected;
 
         public void Collect(InventoryResource inventoryplayer)
@@ -32,7 +34,15 @@ namespace Stands.Resource
 
         public void DestroyResource()
         {
-            Destroy(gameObject);
+            StartCoroutine(Deathing());
+
+            IEnumerator Deathing()
+            {
+                gameObject.GetComponent<MeshRenderer>().enabled = false;
+                vfxPrefabPoof.SetActive(true);
+                yield return new WaitForSeconds(1f);
+                Destroy(gameObject);
+            }
         }
     }
 }

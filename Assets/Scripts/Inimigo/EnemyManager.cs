@@ -5,8 +5,10 @@ using Helpers;
 using Inventory;
 using Player;
 using Stands;
+using Stands.Resource;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 namespace Inimigo
 {
@@ -30,6 +32,7 @@ namespace Inimigo
         [SerializeField] private float offset;
 
         private Animator _animator;
+        private string currentAnimation = "";
         private HealthSystem _healthSystem;
         [SerializeField] private GameObject _vfxPrefab;
         private Camera_ShakeController cameraShake;
@@ -38,7 +41,10 @@ namespace Inimigo
         [SerializeField] private TriggerCheck colliderCheck;
 
         public Transform guardedPosToReturnResource;
- 
+        public Transform carryPos;
+        [SerializeField] private GameObject resoureprefab;
+        private GameObject instantiatedResource;
+
         private void Awake()
         {
         }
@@ -49,7 +55,7 @@ namespace Inimigo
             Type = type;
             agent = GetComponent<NavMeshAgent>();
             target = targetStand;
-           
+
             if (colliderCheck == null)
             {
                 colliderCheck = GetComponentInChildren<TriggerCheck>();
@@ -91,9 +97,36 @@ namespace Inimigo
             agent.speed = velocity;
         }
 
-        private void OnDisable()
+        private void Update()
         {
         }
+
+        #region ANIMATION
+
+        public void ChangeAnimation(String animation, float crossFade = 0.2f, float time = 0f)
+        {
+            if (time > 0) StartCoroutine(Wait());
+            else Validate();
+
+            IEnumerator Wait()
+            {
+                yield return new WaitForSeconds(time - crossFade);
+                Validate();
+            }
+
+            void Validate()
+            {
+                if (currentAnimation != animation)
+                {
+                    currentAnimation = animation;
+
+                    _animator.CrossFade(animation, crossFade);
+                }
+            }
+        }
+
+        #endregion
+
 
         private void EnteredInStand(Collider other)
         {
@@ -107,14 +140,24 @@ namespace Inimigo
 
                 resourceSpawner.PauseCraft();
                 resourceSpawner.enemiesinRange++;
-
             }
             else if (other.CompareTag("Base"))
             {
-               var baseInventory = other.GetComponent<InventoryResource>();
+                var baseInventory = other.GetComponent<InventoryResource>();
                 baseInventory.GetStolenResource(ResourceType.tipo1, 1);
+                if (instantiatedResource == null)
+                {
+                    instantiatedResource = Instantiate(resoureprefab, carryPos);
+                    instantiatedResource.SetActive(true);
+                }
+                else
+                {
+                    instantiatedResource.SetActive(true);
+                }
+
                 agent.SetDestination(guardedPosToReturnResource.position);
-            } 
+                _animator.Play("Float_Hold");
+            }
         }
 
         private void OnDeathHandler(HealthSystem health)
@@ -128,7 +171,17 @@ namespace Inimigo
             agent.isStopped = true;
             agent.enabled = false;
 
-            _animator.Play("EnemyDeath");
+            if (instantiatedResource != null)
+            {
+                instantiatedResource.SetActive(true);
+                instantiatedResource.transform.parent = null;
+                instantiatedResource = null;
+            }
+
+            if (_animator != null)
+            {
+                _animator.Play("Death");
+            }
 
             yield return new WaitForSeconds(0.2f);
 
@@ -143,14 +196,15 @@ namespace Inimigo
         {
             if (resourceSpawner != null)
             {
-                if(resourceSpawner.enemiesinRange > 0)
+                if (resourceSpawner.enemiesinRange > 0)
                 {
                     resourceSpawner.enemiesinRange--;
                 }
-                else if(resourceSpawner.enemiesinRange <= 0)
+                else if (resourceSpawner.enemiesinRange <= 0)
                 {
                     resourceSpawner.ResumeCraft();
                 }
+
                 resourceSpawner = null;
             }
 
@@ -163,10 +217,14 @@ namespace Inimigo
         private void ResetState()
         {
             _healthSystem.Heal(_healthSystem.MaxHealth);
-
+            if (instantiatedResource != null)
+            {
+                instantiatedResource.SetActive(false);
+            }
             if (_animator != null)
             {
-                _animator.Play("Idle");
+                _animator.Rebind();
+                _animator.Play("Float");
             }
 
             agent.enabled = true;

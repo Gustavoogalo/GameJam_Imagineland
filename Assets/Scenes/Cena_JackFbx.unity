@@ -3103,8 +3103,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo.EnemySpawner
   poolSize: 1
   spawnPoint: {fileID: 284590904}
-  enemyTypeAPrefab: {fileID: 814228987579031237, guid: e5d5e7b975356e94a9f9d3072657b702, type: 3}
-  enemyTypeBPrefab: {fileID: 814228987579031237, guid: 2577cccc06ab8524faa6da000ac72916, type: 3}
+  enemyTypeAPrefab: {fileID: 814228987579031237, guid: 2577cccc06ab8524faa6da000ac72916, type: 3}
+  enemyTypeBPrefab: {fileID: 8625858215793380099, guid: b9b7de3bc0e987647b2be563ec8688c3, type: 3}
   currentSpawnType: 1
   timeBetweenSpawns: 10
   targetStands:
@@ -3617,8 +3617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Inimigo.EnemySpawner
   poolSize: 1
   spawnPoint: {fileID: 267368775}
-  enemyTypeAPrefab: {fileID: 814228987579031237, guid: e5d5e7b975356e94a9f9d3072657b702, type: 3}
-  enemyTypeBPrefab: {fileID: 814228987579031237, guid: e5d5e7b975356e94a9f9d3072657b702, type: 3}
+  enemyTypeAPrefab: {fileID: 8625858215793380099, guid: b9b7de3bc0e987647b2be563ec8688c3, type: 3}
+  enemyTypeBPrefab: {fileID: 814228987579031237, guid: 2577cccc06ab8524faa6da000ac72916, type: 3}
   currentSpawnType: 0
   timeBetweenSpawns: 5
   targetStands:
