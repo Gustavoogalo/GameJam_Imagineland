@@ -48,20 +48,20 @@ public class FinalEnemyHandler : MonoBehaviour
         if (victoryPanel != null)
         {
             // 1. Posiciona o painel (opcional, se você quiser que ele fique em um local específico)
-            if (victoryPanelSpawnPoint != null)
-            {
-                // Se o painel for UI, ele deve ser filho do Canvas, então movemos o Canvas/Painel
-                // para perto do inimigo (ajuste conforme seu setup de UI/Canvas World Space)
-                victoryPanel.transform.position = victoryPanelSpawnPoint.position;
-                victoryPanel.transform.rotation = victoryPanelSpawnPoint.rotation;
-            } 
-            else
-            {
-                // Se não houver ponto de spawn, use a posição do inimigo
-                // Isso só funciona se o painel estiver em World Space ou se for um elemento 3D
-                // Se for um Canvas Screen Space, esta linha não terá efeito visual.
-                victoryPanel.transform.position = transform.position;
-            }
+            // if (victoryPanelSpawnPoint != null)
+            // {
+            //     // Se o painel for UI, ele deve ser filho do Canvas, então movemos o Canvas/Painel
+            //     // para perto do inimigo (ajuste conforme seu setup de UI/Canvas World Space)
+            //     victoryPanel.transform.position = victoryPanelSpawnPoint.position;
+            //     victoryPanel.transform.rotation = victoryPanelSpawnPoint.rotation;
+            // } 
+            // else
+            // {
+            //     // Se não houver ponto de spawn, use a posição do inimigo
+            //     // Isso só funciona se o painel estiver em World Space ou se for um elemento 3D
+            //     // Se for um Canvas Screen Space, esta linha não terá efeito visual.
+            //     victoryPanel.transform.position = transform.position;
+            // }
 
             // 2. O VictoryPanel já contém a lógica de ativação e animação no seu OnGameWonHandler,
             // mas como movemos a inscrição para cá, precisamos reescrever a ativação.

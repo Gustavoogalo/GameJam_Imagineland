@@ -18,19 +18,19 @@ public class VictoryPanel : MonoBehaviour
 
     void Awake()
     {
-        rectTransform = GetComponent<RectTransform>();
-        if (rectTransform == null)
-        {
-            Debug.LogError("O objeto VictoryPanel deve ter um componente RectTransform.");
-            enabled = false;
-            return;
-        }
+        // rectTransform = GetComponent<RectTransform>();
+        // if (rectTransform == null)
+        // {
+        //     Debug.LogError("O objeto VictoryPanel deve ter um componente RectTransform.");
+        //     enabled = false;
+        //     return;
+        // }
 
         // 1. Armazena a escala final desejada
-        initialScale = rectTransform.localScale;
+       // initialScale = rectTransform.localScale;
 
         // 2. Inicialmente, o painel deve estar na escala zero
-        rectTransform.localScale = Vector3.zero;
+        //rectTransform.localScale = Vector3.zero;
         
         // Desativa o GameObject pai
         gameObject.SetActive(false); 
@@ -49,9 +49,11 @@ public class VictoryPanel : MonoBehaviour
     /// </summary>
     public void StartScaleAnimation()
     {
+        var animator = GetComponent<Animator>();
+        animator.Play("victoryAnim");
         // Se já estiver ativo, garante que a coroutine antiga pare antes de começar uma nova
-        StopAllCoroutines(); 
-        StartCoroutine(ScaleUpAnimation());
+        //StopAllCoroutines(); 
+        //StartCoroutine(ScaleUpAnimation());
     }
 
     /// <summary>
