@@ -13,7 +13,7 @@ namespace Stands
         [Tooltip("O Prefab do projétil que será disparado.")]
         [SerializeField]
         private GameObject winningBulletPrefab;
-        public float bulletForce = 10f; // Valor padrão para força
+        public float bulletForce = 10f; // A força a ser usada no lançamento
 
         [Tooltip("O Transform de onde o projétil será spawnado (o canhão da base).")]
         [SerializeField]
@@ -33,47 +33,49 @@ namespace Stands
             SpawnWinningBullet();
         }
 
-        // Método para spawnar o projétil (lógica movida do BaseMechanic)
+        // Método para spawnar e lançar o projétil
         private void SpawnWinningBullet()
         {
-            if (winningBulletPrefab == null || bulletSpawnPoint == null)
+            if (winningBulletPrefab == null || bulletSpawnPoint == null || targetToBullet == null)
             {
                 Debug.LogError(
-                    "WinningBulletPrefab ou BulletSpawnPoint não configurados. Não foi possível disparar o projétil.");
+                    "WinningBulletPrefab, BulletSpawnPoint ou TargetToBullet não configurados. Não foi possível disparar o projétil.");
                 return;
             }
 
-            // Garante que o ponto de spawn esteja olhando para o alvo
-            if (targetToBullet != null)
+            // 1. Calcule a direção
+            Vector3 direction = (targetToBullet.position - bulletSpawnPoint.position).normalized;
+
+            // 2. Instancia o projétil na posição de spawn.
+            // A rotação inicial não é crítica, pois o método Launch a corrigirá.
+            GameObject bulletGO = Instantiate(winningBulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+            
+            // 3. Obtém o script do projétil
+            if (bulletGO.TryGetComponent<WinningBullet>(out WinningBullet bulletScript))
             {
+                Debug.Log("Projétil de Vitória disparado e lançado pela Ação Final!");
+                
+                // 4. Lança o projétil usando a direção e a força
+                bulletScript.Launch(direction, bulletForce);
+                
+                // Opcional: faz o ponto de spawn olhar para o alvo (apenas visual)
                 bulletSpawnPoint.LookAt(targetToBullet);
             }
-
-            // Instancia o projétil na posição e rotação do ponto de spawn
-            GameObject bullet = Instantiate(winningBulletPrefab, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-            Debug.Log("Projétil de Vitória disparado pela Ação Final!");
+            else
+            {
+                Debug.LogError("O Prefab do Projétil de Vitória não contém o script WinningBullet.");
+                Destroy(bulletGO); // Limpa o objeto recém-criado
+                return;
+            }
 
             // Ativa a câmera de visualização
             if (cameraToEnemy != null)
             {
                 cameraToEnemy.SetActive(true);
             }
-
-            // Adiciona a força para iniciar o movimento
-            if (bullet.TryGetComponent<Rigidbody>(out Rigidbody rb))
-            {
-                // Aplica a força na direção forward do ponto de spawn
-                rb.AddForce(bulletSpawnPoint.forward * bulletForce, ForceMode.VelocityChange);
-                // Ou, se preferir setar a velocidade diretamente:
-                // rb.linearVelocity = bulletSpawnPoint.forward * bulletForce;
-            }
-            else
-            {
-                Debug.LogWarning("O Projétil de Vitória não tem um Rigidbody para aplicar a força.");
-            }
         }
 
-        // Método estático para invocar o evento de vitória (pode ser chamado pelo projétil ao acertar o alvo)
+        // Método estático para invocar o evento de vitória (permanece o mesmo)
         public static void InvokeGameWonEvent()
         {
             OnGameWon?.Invoke();

@@ -1,19 +1,24 @@
 ﻿using UnityEngine;
+using System;
+
 namespace Stands
 {
     public class WinningBullet : MonoBehaviour
     {
-        [Header("Configuração do Projétil")] [Tooltip("A velocidade com que o projétil se move.")] [SerializeField]
-        private float speed = 50f;
-
-        [Tooltip("A Tag que identifica o inimigo final na cena.")] [SerializeField]
+        // NOVO: Adicione um campo para a velocidade. Se a força for aplicada, esta velocidade 
+        // é o quão rápido o projétil se moverá após o lançamento.
+        [Header("Configuração do Projétil")] 
+        [Tooltip("A Tag que identifica o inimigo final na cena.")] 
+        [SerializeField]
         private string finalEnemyTag = "FinalEnemy";
 
-        [Tooltip("Tempo de vida do projétil caso não atinja nada.")] [SerializeField]
+        [Tooltip("Tempo de vida do projétil caso não atinja nada.")] 
+        [SerializeField]
         private float lifetime = 5f;
 
         private Rigidbody rb;
 
+        // O método Awake agora apenas inicializa e configura o Rigidbody
         void Awake()
         {
             rb = GetComponent<Rigidbody>();
@@ -24,34 +29,34 @@ namespace Stands
                 rb = gameObject.AddComponent<Rigidbody>();
             }
 
-            // Configura o Rigidbody para ter movimento cinemático ou não.
-            // É recomendado desmarcar "Use Gravity" e marcar "Is Kinematic" se for um projétil simples.
             rb.useGravity = false;
-
-            // Define a velocidade inicial no sentido forward (para a frente) do ponto de spawn
-            rb.linearVelocity = transform.forward * speed;
 
             // Destrói o projétil após um tempo para limpar a cena
             Destroy(gameObject, lifetime);
         }
-
+        
+        /// <summary>
+        /// Método chamado por quem instanciou o projétil para lançá-lo.
+        /// </summary>
+        /// <param name="targetDirection">A direção normalizada para onde o projétil deve ir.</param>
+        /// <param name="force">A força/velocidade a ser aplicada.</param>
+        public void Launch(Vector3 targetDirection, float force)
+        {
+            if (rb != null)
+            {
+                transform.forward = targetDirection; 
+                rb.AddForce(targetDirection * force, ForceMode.VelocityChange);
+            }
+        }
+        
         /// <summary>
         /// Chamado quando o projétil colide com outro objeto.
         /// É NECESSÁRIO que o projétil e o inimigo final tenham Colliders e Rigidbody.
         /// </summary>
-        private void OnCollisionEnter(Collision collision)
-        {
-            HandleHit(collision.gameObject);
-        }
-
-        /*
-        // Se você preferir usar Triggers (Colliders com 'Is Trigger' marcado):
         private void OnTriggerEnter(Collider other)
         {
             HandleHit(other.gameObject);
         }
-        */
-
         private void HandleHit(GameObject hitObject)
         {
             // 1. Verifica se atingiu o Inimigo Final
@@ -61,16 +66,15 @@ namespace Stands
                 Debug.Log($"Inimigo Final '{finalEnemyTag}' atingido pelo projétil de vitória! JOGO VENCIDO!");
 
                 // Dispara o evento de Ação - "Venceu o Jogo"
-                //BaseMechanic.OnGameWon?.Invoke();
                 BaseFinalAction.InvokeGameWonEvent();
+                
                 // Destrói o projétil após o impacto
                 Destroy(gameObject);
             }
             else
             {
-                // Opcional: Destruir o projétil ao atingir qualquer coisa que não seja o inimigo final 
-                // para evitar que ele voe pela cena indefinidamente.
-                Destroy(gameObject);
+                // Opcional: Se atingiu algo, destrua a bala para evitar que ela continue.
+                // Destroy(gameObject);
             }
         }
     }
